@@ -1,0 +1,40 @@
+body {
+  background-image:url("images/background.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+.title{
+  text-align: center;
+  margin-top: 50;
+  color: rgb(0, 134, 10);
+  font-weight: bolder;
+}
+.bal{
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(0, 134, 10);
+}
+.welcome{
+  text-align: center;
+  background-color: white;
+  border-top: 100;
+  border-color: rgb(0, 134, 10);
+  border-style: solid;
+}
+.button{
+  background-color: rgb(0, 134, 10);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+a {
+  background-color: white;
+  border-width: thick;
+  border-color: white;
+  border-style: solid;
+}
