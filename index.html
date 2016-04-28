@@ -4,24 +4,22 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <title>Webpage</title>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="app.js"></script>
+    <script src="project.js"></script>
   </head>
   <body>
     <div class="container">
       <!--POPUP FORM FOR BAL ADD/SUB-->
       <div id="abc">
         <div id="popupBalance">
-          <form action="#" id="formBal" method="POST" name="form">
+          <form action="#" method="post" name="formBal" onsubmit="changeBal();">
             <img class="close" src="images/3.png" onclick ="div_hide()">
-            <h2>Enter the Amount you would like to add or subtract.</h2>
+            <h2>Enter your balance</h2>
             <hr>
             <input id="amount" name="amount" placeholder="Amount" type="text">
             <br><br>
-            <input type="radio" name="operation" value="add"> Add <br>
-            <input type="radio" name="operation" value="sub"> Subtract <br>
             <input type="submit" id="submit" onclick="div_hide()">
           </form>
         </div>
@@ -29,7 +27,7 @@
       <!--POPUP FORM FOR BILL ADD-->
       <div id="billAdd">
         <div id="popupBill">
-          <form action="#" id="formBill" method="POST" name="form">
+          <form sandbox="allow-forms" id="formBill" method="post" name="formBill" onsubmit="billCreate();">
             <img class="close" src="images/3.png" onclick ="div_hide2()">
             <h2>Please fill out all fields.</h2>
             <hr>
@@ -41,7 +39,7 @@
             <input id="billDue" name="billDue" placeholder="Bill Due Date" type="text"><br>
             <h6>Link</h6>
             <input id="billLink" name="billLink" placeholder="Link" type="text"><br>
-            <input type="submit" id="billSubmit" onclick="div_hide2()">
+            <input type="submit" id="billSubmit" onclick="div_hide2()" value="">
           </form>
         </div>
       </div>
@@ -54,9 +52,13 @@
       <div><!--Balance-->
         <h2 id="bal">Balance: <button class="baladd" style="margin-left: 10px;" onclick="div_show()"><img src="images/plus.png" height= "20"></button></h2>
       </div>
-      <div style="text-align: center; color: rgb(0, 134, 10)">
+      <div id="bill" style="text-align: center; color: rgb(0, 134, 10)">
         <h3>Bill List<button class="add" style="margin-left: 10px; vertical-align: top;" onclick="div_show2()"><img src="images/plus.png" height= "20"></button></h3>
       </div>
+
+      <!--hidden divs for bills-->
+
+
     </div>
   </body>
 </html>
