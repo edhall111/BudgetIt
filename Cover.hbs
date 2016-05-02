@@ -1,0 +1,81 @@
+<body>
+  <header>
+    <h3 class="Logo">Budget'N</h3>
+        <ul>
+          <li style="float:left"><a class="active" href="/budgetn">Home</a></li>
+          <li><a href="budgetn/about">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+  </header>
+
+      <h2><a class="LogIn" href="budgetn/LogIn">Log In</a></h2>
+      <h2><a class="SignUp" href="budgetn/SignUp">Sign Up</a></h2>
+
+  <p class="CenterText">Make your Budget'N Account</p>
+
+  <img src="coverImg.jpg"/>
+</body>
+<style>
+body{
+
+  background-image: url("coverImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Text will aligh with the view port CENTER */
+  height: 100vh;
+  width: 100vw;
+  background: rgb(255, 206, 96);
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #777;
+}
+.Logo{
+  margin-top: 0;
+  padding: 20px;
+  font-family: arvo;
+  font-size: 40px;
+  text-align: left;
+  color: white;
+}
+.LogIn {
+  color: white;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  background-color: #888;
+  text-align: center;
+}
+.SignUp {
+  color: white;
+  background-color: #888;
+  width: 150px;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+</style>
